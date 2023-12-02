@@ -1,0 +1,1 @@
+This is the floating styled react component
