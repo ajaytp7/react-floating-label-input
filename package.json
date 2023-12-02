@@ -36,7 +36,6 @@
   "release": {
     "branches": [
       "main",
-      "next"
     ]
   }
 }
