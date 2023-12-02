@@ -6,6 +6,9 @@
   "files": [
     "src/**/*"
   ],
+  "repository": {
+    "url": "git@github.com:ajaytp7/react-floating-label-input.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
