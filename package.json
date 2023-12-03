@@ -2,17 +2,12 @@
   "name": "react-fln",
   "version": "1.0.0",
   "description": "React Floating Input element, customizable",
-  "main": "src/index.ts",
-  "files": [
-    "src/**/*"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ajaytp7/react-floating-label-input.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "semantic-release": "semantic-release"
+    "rollup": "rollup --config rollup.config.js --bundleConfigAsCjs"
   },
   "author": "AJAY T P",
   "license": "MIT",
@@ -24,12 +19,17 @@
     "react floating input"
   ],
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.5",
     "@tsconfig/recommended": "^1.0.3",
     "@types/react": "^18.2.39",
     "react": "^18.2.0",
+    "rollup": "^4.6.1",
+    "rollup-plugin-dts": "^6.1.0",
+    "semantic-release": "^22.0.8",
     "styled-components": "^6.1.1",
-    "typescript": "^5.3.2",
-    "semantic-release": "^22.0.8"
+    "typescript": "^5.3.2"
   },
   "peerDependencies": {
     "styled-components": "^6.1.1"
@@ -40,10 +40,15 @@
   },
   "release": {
     "branches": [
-      "main",
-      "next"
+      "main"
     ]
   },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
   "private": false,
   "bugs": {
     "url": "https://github.com/ajaytp7/react-floating-label-input/issues"
