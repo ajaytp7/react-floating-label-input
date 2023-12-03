@@ -1,5 +1,5 @@
 {
-  "name": "react-floating-input",
+  "name": "react-floating-label-input",
   "version": "0.0.0-development",
   "description": "React Floating Input element, customizable",
   "main": "src/index.ts",
