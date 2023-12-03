@@ -1,1 +1,1 @@
-export * from './react-floating-label-input'
+export {default as ReactFloatingLabelInput} from './react-floating-label-input'
