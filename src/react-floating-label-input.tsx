@@ -17,9 +17,9 @@ import './style.module.css'
 // </div>
 
 interface Props {
-    id?: string,
-    borderColor?: string;
-    backgroundColor?: string;
+  id?: string,
+  borderColor?: string;
+  backgroundColor?: string;
 }
 
 const Field = styled.div`
@@ -59,14 +59,14 @@ const StyledField = styled(Field) <Props>`
 `;
 
 // Usage in a React component
-const ReactFloatingLabelInput = ({ props }: any) => {
-    const { backgroundColor, borderColor, placeholder, id, onInput } = props;
-    return (
-        <StyledField>
-            <Input borderColor={borderColor} id={id} onInput={onInput} />
-            <Label backgroundColor={backgroundColor}>{placeholder}</Label>
-        </StyledField>
-    );
+const ReactFloatingLabelInput = (props: any) => {
+  const { backgroundColor, borderColor, placeholder, id, onInput } = props;
+  return (
+    <StyledField>
+      <Input borderColor={borderColor} id={id} onInput={onInput} />
+      <Label backgroundColor={backgroundColor}>{placeholder}</Label>
+    </StyledField>
+  );
 };
 
 export default ReactFloatingLabelInput;
