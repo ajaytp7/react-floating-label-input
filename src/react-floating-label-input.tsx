@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import './style.module.css'
+// import './style.module.css'
 
 // export const ReactFloatingInput = styled.input`
 // background-color: green;
