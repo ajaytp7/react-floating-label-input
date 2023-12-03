@@ -1,1 +1,1 @@
-This is the floating styled react component
+This is the floating label styled react component
